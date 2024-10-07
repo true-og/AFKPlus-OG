@@ -30,9 +30,10 @@ defaultTasks 'clean', 'build', 'shadowJar'
 
 repositories {
     mavenCentral()
-    //Spigot Repo
+    gradlePluginPortal()
+    //Purpur Repo
     maven {
-        url = uri('https://hub.spigotmc.org/nexus/content/groups/public/')
+        url = uri('https://repo.purpurmc.org/snapshots')
     }
     //Personal Repo
     maven {
@@ -50,11 +51,12 @@ repositories {
 }
 
 dependencies {
-    implementation 'net.lapismc:LapisCore:1.12.12'
+    implementation 'net.lapismc:LapisCore:1.12.5'
     implementation 'org.ocpsoft.prettytime:prettytime:5.0.7.Final'
     compileOnly 'net.essentialsx:EssentialsX:2.20.1'
     compileOnly 'net.luckperms:api:5.4'
-    compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT'
+    compileOnly 'io.github.miniplaceholders:miniplaceholders-api:2.2.3'
+    compileOnly 'org.purpurmc.purpur:purpur-api:1.19.4-R0.1-SNAPSHOT'
 }
 
 processResources {

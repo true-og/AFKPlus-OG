@@ -32,7 +32,7 @@ public class AFKPlusContext extends LapisCoreContextCalculator<Player> {
     AFKPlus plugin = (AFKPlus) super.plugin;
 
     public AFKPlusContext() {
-        LapisCoreContexts luckPermsContexts = new LapisCoreContexts();
+        LapisCoreContexts luckPermsContexts = new LapisCoreContexts(plugin);
         luckPermsContexts.registerContext(this);
         plugin.tasks.addShutdownTask(luckPermsContexts::unregisterAll);
     }

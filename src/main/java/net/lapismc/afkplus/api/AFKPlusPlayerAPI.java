@@ -16,54 +16,54 @@
 
 package net.lapismc.afkplus.api;
 
-import net.lapismc.afkplus.AFKPlus;
-import net.lapismc.afkplus.playerdata.AFKPlusPlayer;
+import java.util.UUID;
+
 import org.bukkit.OfflinePlayer;
 
-import java.util.UUID;
+import net.lapismc.afkplus.AFKPlus;
+import net.lapismc.afkplus.playerdata.AFKPlusPlayer;
 
 /**
  * This class can be used to get {@link AFKPlusPlayer} classes to give you access to AFK related methods and values
  */
-@SuppressWarnings({"unused", "WeakerAccess"})
 public class AFKPlusPlayerAPI {
 
-    private static AFKPlus plugin;
+	private static AFKPlus plugin;
 
-    /**
-     * This is for inside use, Please use {@link #AFKPlusPlayerAPI()}
-     *
-     * @param plugin The AFKPlus main class for static access
-     */
-    public AFKPlusPlayerAPI(AFKPlus plugin) {
-        AFKPlusPlayerAPI.plugin = plugin;
-    }
+	/**
+	 * This is for inside use, Please use {@link #AFKPlusPlayerAPI()}
+	 *
+	 * @param plugin The AFKPlus main class for static access
+	 */
+	public AFKPlusPlayerAPI(AFKPlus plugin) {
+		AFKPlusPlayerAPI.plugin = plugin;
+	}
 
-    /**
-     * Use this constructor to get access to the player API
-     */
-    public AFKPlusPlayerAPI() {
+	/**
+	 * Use this constructor to get access to the player API
+	 */
+	public AFKPlusPlayerAPI() {
 
-    }
+	}
 
-    /**
-     * Get a players AFKPlus class
-     *
-     * @param op The player you wish to retrieve
-     * @return Returns the {@link AFKPlusPlayer} class for the player given
-     */
-    public AFKPlusPlayer getPlayer(OfflinePlayer op) {
-        return plugin.getPlayer(op);
-    }
+	/**
+	 * Get a players AFKPlus class
+	 *
+	 * @param op The player you wish to retrieve
+	 * @return Returns the {@link AFKPlusPlayer} class for the player given
+	 */
+	public AFKPlusPlayer getPlayer(OfflinePlayer op) {
+		return plugin.getPlayer(op);
+	}
 
-    /**
-     * Get a players AFKPlus class
-     *
-     * @param uuid The uuid of the player you wish to retrieve
-     * @return Returns the {@link AFKPlusPlayer} class for the uuid given
-     */
-    public AFKPlusPlayer getPlayer(UUID uuid) {
-        return plugin.getPlayer(uuid);
-    }
+	/**
+	 * Get a players AFKPlus class
+	 *
+	 * @param uuid The uuid of the player you wish to retrieve
+	 * @return Returns the {@link AFKPlusPlayer} class for the uuid given
+	 */
+	public AFKPlusPlayer getPlayer(UUID uuid) {
+		return plugin.getPlayer(uuid);
+	}
 
 }

@@ -19,18 +19,18 @@ package net.lapismc.afkplus;
 import net.lapismc.afkplus.playerdata.Permission;
 import net.lapismc.lapiscore.LapisCorePermissions;
 
-@SuppressWarnings("WeakerAccess")
 public class AFKPlusPermissions extends LapisCorePermissions {
 
-    AFKPlusPermissions(AFKPlus plugin) {
-        super(plugin);
-        registerPermissions();
-        loadPermissions();
-    }
+	AFKPlusPermissions(AFKPlus plugin) {
+		super(plugin);
+		registerPermissions();
+		loadPermissions();
+	}
 
-    private void registerPermissions() {
-        for (Permission permission : Permission.values()) {
-            registerPermissions(permission.getPermission());
-        }
-    }
+	private void registerPermissions() {
+		for (Permission permission : Permission.values()) {
+			registerPermissions(permission.getPermission());
+		}
+	}
+
 }
