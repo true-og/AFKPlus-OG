@@ -98,21 +98,3 @@ java {
     withSourcesJar()
     withJavadocJar()
 }
-
-publishing {
-    publications {
-        shadow(MavenPublication) {
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            name 'nexus'
-            url "https://nexus.dnablue2112.com/repository/maven-releases/"
-            credentials {
-                username repoUser
-                password repoPassword
-            }
-        }
-    }
-}
