@@ -28,11 +28,11 @@ plugins {
 }
 
 group = "net.trueog.afkplusog"
-version = "3.4.4-OG"
+version = "3.4.4-trueog"
 val apiVersion = "1.19"
 description = "AFK for professional servers"
 
-base.archivesName.set("AFKPlus")
+base.archivesName.set("AFKPlus-OG")
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
