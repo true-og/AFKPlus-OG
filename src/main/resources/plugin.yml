@@ -1,7 +1,7 @@
-name: AFKPlus
-version: ${project.version}
-main: net.lapismc.afkplus.AFKPlus
-api-version: 1.18
-softdepend: [ PlaceholderAPI, Essentials, LuckPerms ]
-authors: [Dart2112]
-description: AFK for professional servers
+name: AFKPlus-OG
+version: '${version}'
+main: net.lapismc.afkplusog.AFKPlusOG
+api-version: '${apiVersion}'
+softdepend: [PlaceholderAPI, Essentials, LuckPerms]
+authors: [Dart2112, NotAlexNoyle]
+description: AFK for professional servers.
